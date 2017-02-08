@@ -1,0 +1,54 @@
+Hey! this is the test plan for my program
+Every testcase here is shown in a page in the testcases pdf
+
+pg 1 Connect test 1:
+Start server up in one shell session
+in a different one, try to connect to it with username franky
+Type some stuff
+ 
+pg 2 Colors, multiple clients and history test 1:
+Open a second shell session, connect it to chat server with username amanda
+see if amanda gets the chat hist of franky typing
+see if amanda sees franky as one color and franky sees amanda as another
+
+pg 3 History test 2:
+Open a third session, connect to chatserver with username wally
+See if he gets multi colored chat history with amanda and franky
+
+pg 4 Private test 1:
+Have franky start a private session with wally
+have franky type
+see if amanda can see frankys private message
+have wally type, see if its in public chat
+
+pg 5 Private test 2:
+Have amanda try to start a private session with wally, while franky has him
+See if it fails
+
+pg 6 Private test 3:
+have wally try to end a session with franky
+see if it fails(franky has his session with wally, not wally to franky)
+
+pg 7 private test4: 
+have franky end his private sesh with wally
+see if amanda can now start a session with wally
+
+pg 8 Private test 5:
+have wally private sesh back to amanda
+have amanda and wally talk
+make sure franky cant see their messages
+
+pg 9 Private test 6:
+now have wally private franky
+he now has both franky and amanda in private seshs, but amanda only has wally in one
+make sure that franky and amanda are getting wallys messages
+but only wally can see amandas messages
+and frankys are all public
+
+pg 10 Private test 7:
+close all previous sessions (this ones confusing so its easier with a clean slate)
+Open three new sessions, franky, tessa and amanda
+Have amanda private franky and tessa, 
+and franky private amanda.
+now have amanda exit.
+Franky's messages should now be public
